@@ -16,8 +16,8 @@ g++ main.cpp -o example -std=c++11 -O2 -larmadillo
 ./example
 
 ### File Introduction
-1.DEMO Main:main.cpp 
+1.DEMO Main:**main.cpp**
 
-2.neural networks (MLP) implementation Class:NN3Layer.hpp 
+2.neural networks (MLP) implementation Class:**NN3Layer.hpp**
 
-3.Armadillo Lib use example:example1.cpp
+3.Armadillo Lib use example:**example1.cpp**
