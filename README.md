@@ -14,3 +14,10 @@ C++ NeuralNetThreeLayer example use Armadillo
 g++ main.cpp -o example -std=c++11 -O2 -larmadillo
 
 ./example
+
+### File Introduction
+1.DEMO主程式:main.cpp 
+
+2.三層感知機Class:NN3Layer.hpp 
+
+3.Armadillo Lib 使用範例:example1.cpp
