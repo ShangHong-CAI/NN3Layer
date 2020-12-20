@@ -1,23 +1,23 @@
 # NN3Layer
-C++ NeuralNetThreeLayer example use Armadillo
+C++ neural networks (MLP) implementation example use Armadillo
 
 ### Installation
 
-1.安裝Armadillo
+1.Install Armadillo
 
-- 安裝前置條件請參閱：http://arma.sourceforge.net/download.html 內的**Installation Notes**說明	
+- please follow：http://arma.sourceforge.net/download.html **Installation Notes**
 
-- 下載Armadillo並解壓後，參閱解壓出來的README.md安裝
+- Download Armadillo lib,and follow **README.md**
 
-2.編譯
+2.Compiling and Run
 
 g++ main.cpp -o example -std=c++11 -O2 -larmadillo
 
 ./example
 
 ### File Introduction
-1.DEMO主程式:main.cpp 
+1.DEMO Main:main.cpp 
 
-2.三層感知機Class:NN3Layer.hpp 
+2.neural networks (MLP) implementation Class:NN3Layer.hpp 
 
-3.Armadillo Lib 使用範例:example1.cpp
+3.Armadillo Lib use example:example1.cpp
