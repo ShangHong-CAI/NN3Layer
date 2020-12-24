@@ -22,6 +22,9 @@ mat gen_and_example(int randNum){
     case 4:
         A={{1,1,1}};
         break;
+    default:
+        A={{1,1,1}};
+        break;
     }
     return A;
 }
@@ -39,6 +42,9 @@ mat gen_or_example(int randNum){
         A={{1,0,1}};
         break;
     case 4:
+        A={{1,1,1}};
+        break;
+    default:
         A={{1,1,1}};
         break;
     }
@@ -60,6 +66,9 @@ mat gen_xor_example(int randNum){
     case 4:
         A={{1,1,0}};
         break;
+    default:
+        A={{1,1,0}};
+        break;
     }
     return A;
 }
@@ -74,13 +83,13 @@ int main(int argc, char** argv){
 
   /* 亂數的機率分布 */
   std::uniform_real_distribution<float> unif(0.0, 5.0);
-  NN3Layer nn3Layer(2,2,1,0.3);
+  NN3Layer nn3Layer(2,2,1,0.1);
   //train
   for( int a = 0; a < 100000; a++){
       /* 產生亂數 */
       float x = unif(generator);
       mat data = gen_xor_example((int)x);
-      data.print("data:");
+      //data.print("data:");
       nn3Layer.train_step_sgd({data(0,0),data(0,1)},{data(0,2)});
   }
   //test
